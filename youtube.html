@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>youtube.com Clone </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    </head>
+    <body>
+      <div class="header">
+        <div class="left-section">
+          <img class="hamburger-menu"
+           src="icons/hamburger-menu.svg">
+           <img class="youtube-logo"
+          src="icons/sivayt.png">
+          
+        </div>
+        <div class="middle-section">
+        <input class="search-bar" type="text" 
+        placeholder="Search">
+        <button 
+        class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <button 
+        class="voice-search-button
+        ">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+        </div>
+        <div class="right-section">
+          <img class= "upload" src="icons/upload.svg">
+          <img class= "youtube-apps" src="icons/youtube-apps.svg">
+          <div class="notifications-container">
+            <img class= "notifications" src="icons/notifications.svg">
+            <div class="notifications-count">3</div>
+          </div>
+          
+          <img class= "iron" src="icons/iron.jpg">
+        </div>
+      </div>
+      
+      <div class="sidebar">
+       <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+       </div> 
+       <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div> 
+       </div> 
+       <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+       </div> 
+       
+       
+       <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+       </div> 
+       <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+       </div>
+       <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+       </div>
+      </div>
+      
+
+      <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail">
+             <div class="profile-picture-container">
+    <div class="video-container" onclick="playVideo (this)"  target="_blank">
+      <a href="video.html" target="_blank"></a>
+      <img class="thumbnail-image" src="thumbnails/t.jpg" alt="Thumbnail"  >
+      <video class="thumbnail-video" src="thumbnails/v1.mp4"  controls></video>
+    </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+                      <img class="profile" src="thumbnails/p1.jpg">
+                    </div>
+            <div class="video-info">
+      <p class="video-title">
+        "Time passed, but that moment stayed — not on a clock, but in my soul."
+      </p>
+      <p class="video-author">
+        Siva_Manjunath
+      </p>
+      <p class="video-stats"
+      >3M views · 1 months ago
+      </p>
+    </div>
+    </div>  
+  </div>
+</div>
+</div>
+  <script>
+    function playVideo(container) {
+      const image = container.querySelector('.thumbnail-image');
+      const video = container.querySelector('.thumbnail-video');
+      image.style.display = 'none';
+      video.style.display = 'block';
+      video.play();
+    }
+  </script>
+
+
+
+
+
+   <div class="video-preview">
+          <div class="thumbnail">
+             <div class="profile-picture-container">
+              <a href="https://www.instagram.com/siva_manjunath_ " >
+                <img class="thumbnail-image" src="thumbnails/p4.jpg" controls>
+              </a>
+              </div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+               <img class="profile" src="thumbnails/p4.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+               Instagram Account
+              </p>
+              <p class="video-author">
+               Siva
+              </p>
+              <p class="video-stats">
+                519K views &#183; 5 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="video-preview">
+          <div class="thumbnail">
+             <div class="profile-picture-container">
+    <div class="video-container" onclick="playVideo (this)" >
+      <a href="video.html" ></a>
+      <img class="thumbnail-image" src="thumbnails/channel.jpg" alt="Thumbnail"  >
+      <video class="thumbnail-video" src="thumbnails/v2.mp4"  controls></video>
+    </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+                      <img class="profile" src="thumbnails/p2.jpg">
+                    </div>
+            <div class="video-info">
+      <p class="video-title">
+        SAD!
+      </p>
+      <p class="video-author">
+        Siva_Manjunath
+      </p>
+      <p class="video-stats"
+      >1.4M views · 8 months ago
+      </p>
+    </div>
+    </div>  
+  </div>
+</div>
+</div>
+  <script>
+    function playVideo(container) {
+      const image = container.querySelector('.thumbnail-image');
+      const video = container.querySelector('.thumbnail-video');
+      image.style.display = 'none';
+      video.style.display = 'block';
+      video.play();
+    }
+  </script>
+
+
+
+
+
+       <div class="video-preview">
+          <div class="thumbnail">
+             <div class="profile-picture-container">
+    <div class="video-container" onclick="playVideo (this)"  target="_blank">
+      <a href="video.html" target="_blank"></a>
+      <img class="thumbnail-image" src="thumbnails/aa.png" alt="Thumbnail"  target="_blank">
+      <video class="thumbnail-video" src="thumbnails/v4.mp4"  controls></video>
+    </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+                      <img class="profile" src="thumbnails/p3.jpg">
+                    </div>
+            <div class="video-info">
+      <p class="video-title">
+        &#128577;
+      </p>
+      <p class="video-author">
+        Siva
+      </p>
+      <p class="video-stats"
+      >4.4M views · 10 months ago
+      </p>
+    </div>
+    </div>  
+  </div>
+</div>
+</div>
+  <script>
+    function playVideo(container) {
+      const image = container.querySelector('.thumbnail-image');
+      const video = container.querySelector('.thumbnail-video');
+      image.style.display = 'none';
+      video.style.display = 'block';
+      video.play();
+    }
+  </script>
+
+  
+
+        <div class="video-preview">
+          <div class="thumbnail">
+             <div class="profile-picture-container">
+              <a href="https://youtu.be/dxcXdtZh_QA?si=UNx9C9eV-K6si3iv" >
+                <img class="thumbnails" src="thumbnails/cm.png" controls>
+              </a>
+              </div>
+               <div class="video-time">03:05</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+               <img class="profile" src="thumbnails/sni.png">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Channa Mereya | Ae Dil Hai Mushkil | Arijit Singh | Ranbir Kapoor | Anushka Sharma | Pritam | 4K
+              </p>
+              <p class="video-author">
+                Sony Music India &#10003;
+              </p>
+              <p class="video-stats">
+                4.9 views &#183; 3 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail">
+             <div class="profile-picture-container">
+              <a href="https://youtu.be/ltLTwjjTehg?si=859MjK2aXBCrUPvR">
+                <img class="thumbnails" src="thumbnails/va.png" controls>
+              </a>
+              </div>
+            <div class="video-time">4:04</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+               <img class="profile" src="thumbnails/smm.png">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Varinche Prema : Malli Malli Idi Rani Roju Full Video Songs
+              </p>
+              <p class="video-author">
+                Star Maa Music &#10003;
+              </p>
+              <p class="video-stats">
+                46M views &#183; 10 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail">
+             <div class="profile-picture-container">
+              <a href="https://youtu.be/ePOglweqy7o?si=Cq_VFWGNs_EPoMHQ">
+                <img class="thumbnails" src="thumbnails/og.png" controls>
+              </a>
+              </div>
+            <div class="video-time">1:35</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+               <img class="profile" src="thumbnails/sm.png">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                
+              Hungry Cheetah - OG Glimpse | Pawan Kalyan | Sujeeth | Thaman S | DVV Danayya
+              </p>
+              <p class="video-author">
+                Sony Music South &#10003;
+              </p>
+              <p class="video-stats">
+                11M views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+         <div class="video-preview">
+          <div class="thumbnail">
+             <div class="profile-picture-container">
+              <a href="https://youtu.be/x6OaIcF3hbQ?si=Fo7ZXQW2sn14MTUr" >
+                <img class="thumbnails" src="thumbnails/moni.png" controls></video>
+              </a>
+              </div>
+            <div class="video-time">3:08</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+               <img class="profile" src="thumbnails/gem.png">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                
+Monica - Telugu Song| COOLIE | Superstar Rajinikanth | Sun Pictures | Lokesh | Anirudh | Pooja Hegde
+              </p>
+              <p class="video-author">
+                Gemini TV &#10003;
+              </p>
+              <p class="video-stats">
+                10M views &#183; 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail">
+             <div class="profile-picture-container">
+              <a href="https://youtu.be/h2JH0vqDcYc?si=ROxegCgxrrLWeV1c">
+                <img class="thumbnails" src="thumbnails/saaho.png" controls></video>
+              </a>
+              </div>
+            <div class="video-time">5:14</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+               <img class="profile" src="thumbnails/tst.png">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Saaho : Baby Won't You Tell Me Full Video | Prabhas, Shraddha K | Shweta M, Siddharth M, Shankar M
+              </p>
+              <p class="video-author">
+                T-Series Telugu &#10003;
+              </p>
+              <p class="video-stats">
+                67M views &#183; 5 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail">
+             <div class="profile-picture-container">
+              <a href="https://youtu.be/zNFlJqvxwdg?si=QGC6Tdy8WFByuCKo">
+                <img class="thumbnails" src="thumbnails/gb.png" controls>
+              </a>
+              </div>
+            <div class="video-time">4:45</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile" src="thumbnails/tst.png">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Full Video: Gaaju Bomma | HI NANNA | Nani, Mrunal T | Baby Kiara K| Shouryuv | Hesham Abdul Wahab
+              </p>
+              <p class="video-author">
+                T-Series Telugu &#10003;
+              </p>
+              <p class="video-stats">
+                46M views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail">
+             <div class="profile-picture-container">
+              <a href="https://youtu.be/JQbjS0_ZfJ0?si=ZDQZylIdMdavVRq2">
+                <img class="thumbnails" src="thumbnails/asc.png" controls></video>
+              </a>
+              </div>
+            <div class="video-time">3:55</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+               <img class="profile" src="thumbnails/kl.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Kendrick Lamar, SZA - All The Stars
+              </p>
+              <p class="video-author">
+                Kendrick Lamar &#x266C;
+              </p>
+              <p class="video-stats">
+                559M views &#183; 7 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail">
+             <div class="profile-picture-container">
+              <a href="https://youtu.be/GhXU_FTKNbE?si=HzsHljCoTEyCXbTE">
+                <img class="thumbnails" src="thumbnails/ma.png" controls>
+              </a>
+              </div>
+            <div class="video-time">4:02</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+               <img class="profile" src="thumbnails/am.png">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Mari Antaga Full Video Song || SVSC Video Songs || Venkatesh, Mahesh Babu,Samantha,Anjali
+              </p>
+              <p class="video-author">
+                Aditya Movies &#10003;
+              </p>
+              <p class="video-stats">
+                15M views &#183; 11 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail">
+             <div class="profile-picture-container">
+              <a href="https://youtu.be/wJVq_6DkavM?si=HqgiMGBAEtbbH-Fp">
+                <img class="thumbnails" src="thumbnails/np.png" controls>
+              </a>
+              </div>
+            <div class="video-time">4:13</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+               <img class="profile" src="thumbnails/zms.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Needa Padadhani - Full Video | Jersey | Nani, Shraddha Srinath | Anirudh Ravichander | Darshan Raval
+              </p>
+              <p class="video-author">
+                Zee Music South &#10003;
+              </p>
+              <p class="video-stats">
+                18M views &#183; 6 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail">
+             <div class="profile-picture-container">
+              <a href="https://youtu.be/vgm1u2gPxzw?si=g3RCrQsx68GJ85ek">
+                <img class="thumbnails" src="thumbnails/rj.png" controls>
+              </a>
+              </div>
+            <div class="video-time">3:10</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+               <img class="profile" src="thumbnails/ero.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Raanjhanaa Hua Mai Tera (Video Song) | Raanjhanaa | Dhanush | Sonam Kapoor
+              </p>
+              <p class="video-author">
+                Eros Now Music &#10003;
+              </p>
+              <p class="video-stats">
+                141M views &#183; 11 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail">
+            <div class="profile-picture-container">
+              <a href="https://youtu.be/5yPO5lFeAIE?si=OCCv1pyHPxO5OJKO">
+                <img class="thumbnails" src="thumbnails/me.png" controls>
+              </a>
+              </div>
+            <div class="video-time">2:59</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+               <img class="profile" src="thumbnails/am.png">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Mawaa Enthaina Full Video Song |Guntur Kaaram |Mahesh Babu |Meenakshi Chaudhary |Trivikram |Thaman S
+
+              </p>
+              <p class="video-author">
+                Adity Music &#10003;
+              </p>
+              <p class="video-stats">
+                34M views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+         <div class="video-preview">
+          <div class="thumbnail">
+             <div class="profile-picture-container">
+              <a href="https://youtu.be/JrrX-_johZ4?si=MrNMr6cG8Pe8MKvw">
+                <img class="thumbnails" src="thumbnails/sn.png" controls>
+              </a>
+              </div>
+            <div class="video-time">7:18</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+               <img class="profile" src="thumbnails/tf.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Sundari Nene Nuvvanta Song - Dalapathi Movie Songs - Rajnikanth, Mani Ratnam, Ilayaraja
+              </p>
+              <p class="video-author">
+                Telugu Filmnagar  &#10003;
+              </p>
+              <p class="video-stats">
+                4.8 views &#183; 12 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        
+      </section>
+    </main>
+  </body>
+</html>
+
